@@ -1,0 +1,72 @@
+body{
+    background-color: #1b1b1b;
+    padding: 1vh 1vw;
+    margin: 0;
+}
+
+.dark-mode{
+    background-color: #faf9f6;
+}
+
+.mode-button{
+    padding: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/sun.svg');
+    border: 5px solid #a43ca3;
+    border-radius: 999px;
+}
+
+.mode-button:focus{
+    outline: none;
+}
+
+.mode-light{
+    background-image: url('./assets/moon.svg') !important;
+    background-color: #1b1b1b;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    width: 1500px;
+    height: 675px;
+    overflow: hidden;
+    gap: 0;
+}
+
+.grid-item{
+    width: 25px;
+    height: 25px;
+}
+
+.start{
+    display: none;
+}
+
+.start-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #faf9f6;
+    border: 5px solid #a43ca3;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.start-button:focus{
+    outline: none;
+}
+
+.alive{
+    background-color: white;
+}
